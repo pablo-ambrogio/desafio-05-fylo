@@ -1,7 +1,7 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap");
 body {
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   font-size: 14px;
   font-family: "Raleway", sans-serif;
@@ -242,7 +242,7 @@ body {
   width: 0.6rem;
   height: 0.6rem;
   position: absolute;
-  right: 0;
+  right: 0.1rem;
   top: 50%;
   transform: translateY(-50%);
   -webkit-appearance: none;
@@ -253,11 +253,10 @@ body {
 }
 .fylo__input[type=range]::-webkit-slider-runnable-track {
   width: 100%;
-  height: 0.8rem;
-  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+  height: 0.7rem;
   background: linear-gradient(to left, #ff4d97, #ffa399);
   border-radius: 5px;
-  border: 0.2px solid #010101;
+  border: 0.2px solid linear-gradient(to left, #ff4d97, #ffa399);
   position: relative;
 }
 

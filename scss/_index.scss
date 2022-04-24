@@ -4,7 +4,7 @@
 @use  './globals/typography' as fn;
 
 body {
-    @include mx.w-h (100vw, 100vh);
+    @include mx.w-h (100%, 100vh);
     font-size: 14px;
     font-family: fn.$font-ralewey;
     @include mx.d-flex(row, center, center);
@@ -215,7 +215,7 @@ body {
         &[type=range]::-webkit-slider-thumb {
             @include mx.w-h(.6rem, .6rem);
             position: absolute;
-            right: 0;
+            right: 0.1rem;
             top: 50%;
             transform: translateY(-50%);
             -webkit-appearance: none;
@@ -238,12 +238,12 @@ body {
         */
 
         &[type=range]::-webkit-slider-runnable-track {
-            @include mx.w-h(100%, .8rem);
+            @include mx.w-h(100%, .7rem);
             // cursor: pointer;
-            box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+            // box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
             background: linear-gradient(to left, color.$primary-pink, color.$primary-salmon);
             border-radius: 5px;
-            border: 0.2px solid #010101;
+            border: 0.2px solid linear-gradient(to left, color.$primary-pink, color.$primary-salmon);
 
             position: relative;
         }
