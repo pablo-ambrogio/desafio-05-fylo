@@ -75,6 +75,7 @@ body {
         @include mx.d-flex (column, center, flex-start);
         row-gap: 0;
         padding: 0 2rem;
+        padding-bottom: 1rem;
         border-top-right-radius: 1rem;
         row-gap: .5rem;
         position: relative;
