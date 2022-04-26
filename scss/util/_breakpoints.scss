@@ -2,8 +2,8 @@
 $breakpoints-up: (
     "ms": 43.75em, // 700px
     "lg": 61.99em, // 992px
-    "xl": 74.99, // 1200px
-    "xxl": 87.49 //1400px
+    "xl": 74.99em, // 1200px
+    "xxl": 87.49em, //1400px
 );
 
 @mixin bearkpoint ($size) {
